@@ -1,0 +1,477 @@
+.cardGrid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  max-width: 90%;
+  margin: 15% auto 15% auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.cardWrapper {
+  margin: 10px;
+}
+.card {
+  background-color: #D9D9D9;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  font-weight: bold;
+}
+.cardTitle{
+  text-align: center;
+  font-family: 'Avenir Heavy', sans-serif;
+}
+.cardText{
+  text-align: center;
+  font-family: 'Avenir Regular', sans-serif;
+}
+.cardImg {
+  align-content: center;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Applications */
+.cardGridApplications {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 24px;
+}
+.item1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+}
+.item2 {
+  grid-column: 1;
+  grid-row: 3;
+  border-radius: 10px;
+}
+.item3 {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  border-radius: 10px;
+}
+.item4 {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  border-radius: 10px;
+}
+.item5 {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  border-radius: 10px;
+}
+.item6 {
+  grid-column: 4;
+  grid-row: 1;
+  border-radius: 10px;
+}
+.item7 {
+  grid-column: 4;
+  grid-row: 2 / span 2;
+  border-radius: 10px;
+}
+.cardApplications{
+  background-color: transparent!important; 
+  border-color: transparent!important;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-family: 'Avenir Black', sans-serif;
+  font-weight: bold;
+}
+.cardTextApplications{
+  position: absolute;
+  color: #fff;
+  z-index: 3;
+}
+.cardBorde{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cardImgWrapperApplications{
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+}
+.cardImgApplications{
+  object-fit: cover;
+  left: 0%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+/* Connectivity.js */
+.cardGridConnectivity{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 90%;
+  margin: 20px auto 20px auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.cardWrapperConnectivity {
+  max-width: 400px;
+  overflow: hidden;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardWrapperConnectivity::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background: linear-gradient(90deg, var(--var--primary-color), var(--var--secondary-color)) border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardConnectivity {
+  height: 420px;
+  width: 360px;
+  background: rgba(255, 255, 255, 0.10)!important;
+  border-radius: 20px;
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardTitleConnectivity{
+  font-size: 30px;
+  text-align: center;
+  font-size: large;
+  padding-top: 5%;
+}
+.cardTextConnectivity{
+  text-align: center;
+  font-size: 22px;
+  margin: 5%;
+  font-weight:100;
+  margin-bottom: 0px;
+  padding: 0% 3% 8% 3%;
+}
+.cardImgWrapperConnectivity{
+  padding-top: 8%;
+  order: -1;
+}
+/*Services tech*/
+.cardWrapperConnectivity.Tech{
+  max-width: 340px;
+  border-radius: 20px;
+  margin: 0;
+}
+.cardWrapperConnectivity.Tech img{
+  max-width: 150px;
+}
+.cardGridConnectivity.Tech{
+  gap: auto;
+  justify-content: space-between;
+  max-width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0 0;
+}
+/*CarouselHome*/
+.cardGridCarouselHome{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  box-sizing: border-box;
+}
+.cardWrapperCarouselHome{
+  max-width: 400px;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardWrapperCarouselHome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background: linear-gradient(90deg, #1DB7E6, #1F1D86) border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardCarouselHome{
+  background-color: transparent;
+  display: flex;
+  width: 240px;
+  height: 150px;
+  padding: 16px 16px 16px 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.cardTitleCarouselHome{
+  font-family: 'Avenir Heavy';
+  text-align: center;
+  font-size: x-large;
+  padding-top: 10%;
+  font-weight: 800;
+}
+.cardTextCarouselHome{
+  font-family: 'Avenir Regular';
+  font-weight: lighter;
+  text-align: left;
+  font-size: large;
+  margin: 5%;
+  margin-bottom: 0px;
+  padding-top: 0%;
+}
+/* Partners.js */
+.cardPartners {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+.cardImg.cardImgPartners{
+  width: 65%;
+  height: 65%;
+}
+.cardImgPartners {
+  padding-top: 10%;
+  height: 80px;
+  width: 80px;
+}
+.cardTextPartners {
+ display: none;
+}
+/* Investors.js */
+.cardGridInvestors{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  max-width: 90%;
+  margin: 5%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.cardInvestors{
+  width: 650px;
+  height: 250px;
+
+}
+@media all and (max-width: 1600px) {
+  .cardCarouselHome{
+    width: 220px;
+  }
+}
+@media all and (max-width: 1366px) {
+  /* Connectivity */
+  
+  .cardGridConnectivity{
+    margin: 5px auto;
+    gap: 15px;
+  }
+
+  .cardConnectivity{
+    width: 300px;
+    height: auto;
+  }
+  .cardTitleConnectivity{
+    font-size: 20px!important;
+  }
+  .cardTextConnectivity{
+    font-size: 18px;
+  }
+  .cardImgWrapperConnectivity img{
+    width:80px;
+  }
+
+  /* Investors */
+  .cardInvestors{
+    width: 500px;
+    height: 150px;
+  }
+  .cardCarouselHome{
+    width: 140px;
+    height: 100px;
+  }
+  .cardTitleCarouselHome{
+    font-size: smaller;
+  }
+}
+@media all and (max-width: 1024px) {
+  /* Applications */
+  .cardText{
+    font-size: 18px;
+  }
+
+  .cardGridConnectivity{
+    margin: 5px auto;
+    gap: 15px;
+  }
+
+  /* Investors */
+  .cardInvestors{
+    width: 500px;
+    height: 150px;
+  }
+  /*CarouselHome*/
+  .cardCarouselHome{
+    width: 150px;
+    height: 100px;
+    padding: 10px 10px 10px 5px;
+  }
+  .cardTextCarouselHome{
+    font-size: smaller;
+  }
+  .cardTitleCarouselHome{
+    font-size: medium;
+  }
+
+}
+@media all and (max-width: 768px) {
+  /* Applications */
+  .cardText{
+    font-size: 16px;
+  }
+   /* Investors */
+   .cardInvestors{
+    width: 350px;
+    height: 150px;
+  }
+  /* Connectivity */
+  .cardGridConnectivity{
+    margin: 5px auto;
+    gap: 5px;
+  }
+  /*CarouselHome*/
+  .cardCarouselHome{
+    width: 150px;
+    height: 100px;
+    padding: 10px 10px 10px 5px;
+  }
+  .cardTextCarouselHome{
+    font-size: smaller;
+  }
+  .cardTitleCarouselHome{
+    font-size: medium;
+  }
+}
+@media all and (max-width: 480px) {
+  .item1, .item2, .item3, .item4, .item5, .item6, .item7 {
+    border-radius: 5px;
+  }
+
+
+  .cardGridConnectivity.Tech{
+    justify-content: center;
+  }
+
+  /* Applications */
+  .cardGridApplications{
+    width: 90%;
+  }
+  .cardApplications{
+    padding: 0px;
+  }
+  .cardGridApplications .cardWrapper{
+    margin: 2px;
+  }
+  .cardText{
+    font-size: 10px;
+  }
+  .cardTextApplications{
+    padding-top: 0%;
+  }
+
+  /* Investors */
+  .cardInvestors{
+    width: 275px;
+    height: 126px;
+    align-items: center;
+  }
+  .cardTextInvestors{
+    padding-top: 15%;
+  }
+
+  /* Connectivity */
+  .cardGridConnectivity{
+    padding: 0;
+    gap: 15px;
+  }
+  .cardConnectivity{
+    width: 270px;
+    height: 330px;
+  }
+  .cardText{
+    font-size: 13px;
+  }
+  .cardWrapperConnectivity{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* carouselHome */
+  .cardWrapperCarouselHome::before {
+    border-radius: 10px;
+  }
+
+  .paragraphCarousel{
+    margin-top: 0;
+  }
+
+  .cardCarouselHome{
+    width: 100px;
+    height: 75px;
+    padding: 5px 5px 5px 2px;
+  }
+  .cardTextCarouselHome{
+    font-size: x-small;
+  }
+  .cardTitleCarouselHome{
+    font-size: smaller;
+  }
+}

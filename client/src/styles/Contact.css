@@ -1,0 +1,21 @@
+.contactSection{
+    padding-top: 10%;
+    margin-bottom: 10%;
+}
+.contactSection span.anotherText{
+    background: #1DB7E6;  
+    background: -webkit-linear-gradient(to right, #1db7e6, var(--var--secondary-color));
+    background: linear-gradient(to right, #1db7e6, var(--var--secondary-color));
+    background-clip: text;-webkit-background-clip: text;color: transparent;
+    font-weight: bolder;
+}
+
+@media all and (max-width: 1366px) {
+    .contactSection{
+        padding-top: 0%;
+        margin-bottom: 0%;
+    }  
+    .contactSection h3{
+        margin-bottom: 15px;
+    }  
+}

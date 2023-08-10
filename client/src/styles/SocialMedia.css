@@ -1,0 +1,30 @@
+.rowSocialMedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    gap: 10px;
+}
+.containerTSocialMedia{
+    margin-top: 10em;
+
+}
+iframe {
+    overflow: hidden;
+
+}
+.ButtonWrapperSocialMedia{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+@media screen and (max-width: 1024px) {
+    .rowSocialMedia{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

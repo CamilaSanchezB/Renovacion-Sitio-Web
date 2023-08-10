@@ -1,0 +1,11 @@
+.solutionImageWrapper{
+    display: flex;
+    justify-content: center;
+}
+.Solution{
+    margin-left: 10%;
+}
+.solutionImage{
+    height: 60%;
+    width: 60%;
+}

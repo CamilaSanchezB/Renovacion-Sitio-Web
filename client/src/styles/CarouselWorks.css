@@ -1,0 +1,98 @@
+.SectionPrueba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.ContainerPrueba{
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    width: 100vw;
+    height: 647px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.CarouselPrueba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s,visibility 500ms ease 0s;
+    position: absolute;
+    border-radius: 12px;
+}
+.cardPrueba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    height: 555px;
+}
+.imagePrueba{
+    width: 700px;
+    height: 420px;
+}
+.imagePrueba img{
+    width: 100%;
+    height: auto;
+    max-height:400px;
+    object-fit: contain;
+}
+.ProgressPrueba{
+    width: 400px;
+}
+.descriptionPrueba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numeroPrueba {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numeroPrueba p {
+    font-family: 'Avenir Black';
+    font-size: 30px;
+    color: #1db7e6;
+}
+.textPrueba {
+    width: 90%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.p-progressbar .p-progressbar-value {
+    background-color: #1db7e6;
+}
+.p-progressbar .p-progressbar-label {
+    color: #1db7e6;
+}
+
+
+@media screen and (max-width: 1366px) {  
+
+  }
+
+  @media screen and (max-width: 1024px) {
+
+  }
+  @media screen and (max-width: 768px) {
+    
+  }
+  @media screen and (max-width: 480px) {
+    .ContainerPrueba{
+        height: 300px;
+    }
+    .imagePrueba img{
+        width: 90%;
+        height: 400px;
+
+    }
+  }

@@ -1,0 +1,42 @@
+
+.MissionsVideoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.MissionsVideo{
+    height: 100%!important;
+    width: 90%!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media all and (max-width:2600px) {
+    .MissionsVideoWrapper{
+        height: 700px;
+    }
+}
+@media all and (max-width:1600px) {
+    .MissionsVideoWrapper{
+        height: 600px;
+    }
+}
+@media all and (max-width:768px) {
+    .MissionsVideoWrapper{
+        height: 450px;
+    }  
+}
+@media all and (max-width:480px) {
+    .MissionsVideoWrapper{
+        height: 300px;
+    }
+}
+@media all and (max-width:300px) {
+    .MissionsVideoWrapper{
+    height: 250px;
+    }
+}

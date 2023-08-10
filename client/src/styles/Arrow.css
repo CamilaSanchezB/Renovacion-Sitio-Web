@@ -1,0 +1,64 @@
+.ArrowCarousel{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    width: 72px;
+    height: 72px;
+    background: rgba(240, 242, 245, 0.3);
+    border-radius: 100%;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.ArrowCarousel:hover{
+    opacity: 1;
+
+}
+.ArrowCarouselLeft{
+    right: 90%;
+}
+.ArrowCarouselRight{
+    left: 90%;
+}
+.Carousel3DArrow{
+    margin-top: 10%;
+    z-index: 5;
+}
+.CarouselWorksArrow{
+    margin-top: 15%;
+}
+
+
+@media screen and (max-width: 1366px){
+    .ArrowCarousel{
+        width: 50px;
+        height: 50px;
+    }
+    .ArrowSvgRight{
+        width: 20px!important;
+        height: 20px!important;
+    }
+    .ArrowSvgLeft{
+        width: 20px!important;
+        height: 20px!important;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .ArrowCarousel{
+        width: 35px;
+        height: 35px;
+    }
+    .ArrowSvgRight{
+        width: 15px!important;
+        height: 15px!important;
+    }
+    .ArrowSvgLeft{
+        width: 15px!important;
+        height: 15px!important;
+    }
+}

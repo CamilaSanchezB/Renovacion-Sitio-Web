@@ -1,0 +1,118 @@
+.FollowUs{
+    margin:5% 10%;
+}
+.FollowUsImg{
+    height: 500px;
+    width: 500px;
+    margin-left: 0px;
+}
+.FollowUsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 100%;
+    max-height: 100%;
+}
+.FollowUsLeft{
+    flex: 1;
+    text-align: left;
+}
+.FollowUsLeft p{
+    max-width: 90%;
+    font-size: 24px;
+}
+.FollowUsRight{
+    flex: 1;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1366px) {
+    .FollowUsContainer{
+        flex-direction: row;
+    }
+    .FollowUsLeft p{
+        font-size: 22px;
+    }
+    .FollowUsRight img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .FollowUsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .FollowUsRight
+    .FollowUsLeft{
+        font-size: 18px;
+        width: 80%;
+        font-size: 20px;
+    }
+    .FollowUsRight Img{
+        height: 370px ;
+        width: 370px;
+    }
+}
+@media all and (max-width:768px)  {
+    .FollowUsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .FollowUsRight
+    .FollowUsLeft{
+        font-size: 18px;
+        max-width: 75%;
+    }
+    .FollowUsRight Img{
+        height: 370px ;
+        width: 370px;
+    }
+}
+@media all and (max-width:480px) {
+    .FollowUsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .FollowUsLeft{
+        max-width: 280px;
+    }
+    .FollowUsLeft p{
+        font-size: 16px;
+        width: 260px;
+    }
+    .FollowUsRight{
+        max-width: 100%;
+        width: 280px;
+        height: 280px;
+        justify-content: flex-start;
+    }
+    .FollowUsRight Img{
+        width:280px;
+        height: 280px;
+    }
+}
+@media all and (max-width:300px) {
+    .FollowUsContainer{
+        align-items: flex-start;
+    }
+    .FollowUsLeft{
+        max-width: 100%;
+    }
+    .FollowUsLeft p{
+        font-size: 16px;
+        width: 260px
+    }
+    .FollowUsRight{
+        max-width: 100%;
+        width: 230px;
+        justify-content: flex-start;
+    }
+    .FollowUsRight Img{
+        width:230px;
+        height: 230px;
+    }
+}

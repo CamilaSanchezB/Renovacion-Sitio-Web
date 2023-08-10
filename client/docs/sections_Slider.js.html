@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> sections/Slider.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#Modelo3DComponent">Modelo3DComponent</a></li><li><a href="global.html#ModeloInfo">ModeloInfo</a></li><li><a href="global.html#ModeloRender">ModeloRender</a></li><li><a href="global.html#SliderContent">SliderContent</a></li><li><a href="global.html#asignar">asignar</a></li><li><a href="global.html#calculateProgressWidth">calculateProgressWidth</a></li><li><a href="global.html#chequeoContrasena">chequeoContrasena</a></li><li><a href="global.html#chequeoUsuario">chequeoUsuario</a></li><li><a href="global.html#handleClick">handleClick</a></li><li><a href="global.html#legendTemplate">legendTemplate</a></li><li><a href="global.html#procesarCambio">procesarCambio</a></li><li><a href="global.html#setStylePerPosition">setStylePerPosition</a></li><li><a href="global.html#show">show</a></li><li><a href="global.html#showError">showError</a></li><li><a href="global.html#showSuccess">showSuccess</a></li></ul></div><div class="category"><h2>Components</h2><h3>Global</h3><ul><li><a href="global.html#AnimacionMundo">AnimacionMundo</a></li><li><a href="global.html#Arrow">Arrow</a></li><li><a href="global.html#Button">Button</a></li><li><a href="global.html#Card">Card</a></li><li><a href="global.html#CarouselTechnology">CarouselTechnology</a></li><li><a href="global.html#Counter">Counter</a></li><li><a href="global.html#DefaultCard">DefaultCard</a></li><li><a href="global.html#ElementCarouselApplications">ElementCarouselApplications</a></li><li><a href="global.html#ElementNewsDetail">ElementNewsDetail</a></li><li><a href="global.html#Flags">Flags</a></li><li><a href="global.html#Form">Form</a></li><li><a href="global.html#Input">Input</a></li><li><a href="global.html#LoginForm">LoginForm</a></li><li><a href="global.html#Logo">Logo</a></li><li><a href="global.html#ModalEditorContador">ModalEditorContador</a></li><li><a href="global.html#ModalEditorRegistro">ModalEditorRegistro</a></li><li><a href="global.html#ModalEditorRoadmap">ModalEditorRoadmap</a></li><li><a href="global.html#Modelo3D">Modelo3D</a></li><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#NavbarLink">NavbarLink</a></li><li><a href="global.html#NavbarNoticia">NavbarNoticia</a></li><li><a href="global.html#Noticia">Noticia</a></li><li><a href="global.html#Opciones">Opciones</a></li><li><a href="global.html#ProgressBar">ProgressBar</a></li><li><a href="global.html#Roadmap">Roadmap</a></li><li><a href="global.html#SelectArchivo">SelectArchivo</a></li><li><a href="global.html#Title">Title</a></li><li><a href="global.html#ToggleButton">ToggleButton</a></li><li><a href="global.html#Wave">Wave</a></li><li><a href="global.html#Year">Year</a></li></ul></div><div class="category"><h2>Functions</h2><h3>Global</h3><ul><li><a href="global.html#actualizarContrasena">actualizarContrasena</a></li><li><a href="global.html#actualizarNoticia">actualizarNoticia</a></li><li><a href="global.html#actualizarPermisos">actualizarPermisos</a></li><li><a href="global.html#actualizarUsuarios">actualizarUsuarios</a></li><li><a href="global.html#agregarAnioRoadmap">agregarAnioRoadmap</a></li><li><a href="global.html#autenticar">autenticar</a></li><li><a href="global.html#borrarEditor">borrarEditor</a></li><li><a href="global.html#borrarMultimedia">borrarMultimedia</a></li><li><a href="global.html#borrarNoticia">borrarNoticia</a></li><li><a href="global.html#crearNoticia">crearNoticia</a></li><li><a href="global.html#crearUsuario">crearUsuario</a></li><li><a href="global.html#editarAnioInicio">editarAnioInicio</a></li><li><a href="global.html#editarCantAnios">editarCantAnios</a></li><li><a href="global.html#editarCantidadContadores">editarCantidadContadores</a></li><li><a href="global.html#editarContenido">editarContenido</a></li><li><a href="global.html#editarContenidoContadores">editarContenidoContadores</a></li><li><a href="global.html#eliminarContador">eliminarContador</a></li><li><a href="global.html#encriptar">encriptar</a></li><li><a href="global.html#enviarMailContacto">enviarMailContacto</a></li><li><a href="global.html#fetchDataLatestNews">fetchDataLatestNews</a></li><li><a href="global.html#fetchDataMultimedia">fetchDataMultimedia</a></li><li><a href="global.html#fetchDataMultimediaWeb">fetchDataMultimediaWeb</a></li><li><a href="global.html#fetchDataNoticias">fetchDataNoticias</a></li><li><a href="global.html#fetchDataNoticiasWMultimedia">fetchDataNoticiasWMultimedia</a></li><li><a href="global.html#fetchMultimediaById">fetchMultimediaById</a></li><li><a href="global.html#fetchNoticiaById">fetchNoticiaById</a></li><li><a href="global.html#getAnioInicio">getAnioInicio</a></li><li><a href="global.html#getCantAnios">getCantAnios</a></li><li><a href="global.html#getContadores">getContadores</a></li><li><a href="global.html#getContenidoRoadmap">getContenidoRoadmap</a></li><li><a href="global.html#getEditores">getEditores</a></li><li><a href="global.html#getImgByAnio">getImgByAnio</a></li><li><a href="global.html#getRoadmap">getRoadmap</a></li><li><a href="global.html#getRuta">getRuta</a></li><li><a href="global.html#getSuscriptores">getSuscriptores</a></li><li><a href="global.html#isSuper">isSuper</a></li><li><a href="global.html#sendFiles">sendFiles</a></li></ul></div><div class="category"><h2>Pages</h2><h3>Global</h3><ul><li><a href="global.html#AboutUs">AboutUs</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#HowItWorks">HowItWorks</a></li><li><a href="global.html#News">News</a></li><li><a href="global.html#Newsletter">Newsletter</a></li><li><a href="global.html#Noticias">Noticias</a></li><li><a href="global.html#Technology">Technology</a></li></ul></div><div class="category"><h2>Pages - CRUD</h2><h3>Global</h3><ul><li><a href="global.html#Contador">Contador</a></li><li><a href="global.html#Creation">Creation</a></li><li><a href="global.html#Detail">Detail</a></li><li><a href="global.html#EditorRoadmap">EditorRoadmap</a></li><li><a href="global.html#HomeCrud">HomeCrud</a></li><li><a href="global.html#LoginPage">LoginPage</a></li><li><a href="global.html#Multimedia">Multimedia</a></li><li><a href="global.html#SignUpPage">SignUpPage</a></li></ul></div><div class="category"><h2>Sections</h2><h3>Global</h3><ul><li><a href="global.html#Applications">Applications</a></li><li><a href="global.html#ApplicationsDetail">ApplicationsDetail</a></li><li><a href="global.html#Carousel3D">Carousel3D</a></li><li><a href="global.html#CarouselNewsDetail">CarouselNewsDetail</a></li><li><a href="global.html#CarouselNoticia">CarouselNoticia</a></li><li><a href="global.html#CarouselTechnologySection">CarouselTechnologySection</a></li><li><a href="global.html#CarouselTemplate">CarouselTemplate</a></li><li><a href="global.html#CarouselWorks">CarouselWorks</a></li><li><a href="global.html#Connectivity">Connectivity</a></li><li><a href="global.html#Constellation">Constellation</a></li><li><a href="global.html#Contact">Contact</a></li><li><a href="global.html#CounterSection">CounterSection</a></li><li><a href="global.html#Desarrollo">Desarrollo</a></li><li><a href="global.html#FollowUs">FollowUs</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#FooterTemplate">FooterTemplate</a></li><li><a href="global.html#History">History</a></li><li><a href="global.html#Investors">Investors</a></li><li><a href="global.html#LastMission">LastMission</a></li><li><a href="global.html#ManagmentTeam">ManagmentTeam</a></li><li><a href="global.html#Missions">Missions</a></li><li><a href="global.html#Modelo3DSection">Modelo3DSection</a></li><li><a href="global.html#Partners">Partners</a></li><li><a href="global.html#SectionMundo">SectionMundo</a></li><li><a href="global.html#ServicesTech">ServicesTech</a></li><li><a href="global.html#Slider">Slider</a></li><li><a href="global.html#SocialMedia">SocialMedia</a></li><li><a href="global.html#Solution">Solution</a></li><li><a href="global.html#Welcome">Welcome</a></li><li><a href="global.html#Welcome2">Welcome2</a></li><li><a href="global.html#Welcome3">Welcome3</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>sections/Slider.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState, useEffect } from "react";
+import '../styles/Silder.css'
+
+/**
+ * @function Slider
+ * @desc Componente funcional que muestra un slider con contenido interactivo.
+ * @category Sections
+ * @param {Object} props - Propiedades del componente.
+ * @param {Array} props.data - Datos del slider que incluyen el contenido de cada diapositiva.
+ * @param {number} props.activeSlide - Índice de la diapositiva activa actualmente.
+ * @returns {JSX.Element}
+ */
+export default (props) => {
+  
+  const [activeSlide, setactiveSlide] = useState(props.activeSlide);
+
+  const next = () => activeSlide &lt; props.data.length - 1 &amp;&amp; setactiveSlide(activeSlide + 1);
+
+  const prev = () => activeSlide > 0 &amp;&amp; setactiveSlide(activeSlide - 1);
+
+  // Estilos de las diapositivas para animación y visibilidad según la diapositiva activa
+  const getStyles = (index) => {
+    let windowWidth = window.innerWidth;
+    let scale = 1;
+    let value = activeSlide - index;
+    let cordenadas = {x: 0, z:0}
+    switch(true){
+      default: //1920
+        cordenadas ={
+          x: 1000, z: 1000
+        };
+        scale = 1;
+      break;
+      case windowWidth&lt;=1024 &amp;&amp; windowWidth>768:
+        cordenadas ={
+          x: 725, z: 1000
+        };
+        scale = 0.75;
+        break;
+      case windowWidth&lt;=768 &amp;&amp; windowWidth>480:
+        cordenadas ={
+          x: 300, z: 1000
+        };
+        scale = 0.4;
+        break;
+      case windowWidth&lt;=480 &amp;&amp; windowWidth>400:
+        cordenadas ={
+          x: 330, z: 330
+        };
+        scale = 0.3;
+        break;
+      case windowWidth&lt;=400 &amp;&amp; windowWidth>0:
+        cordenadas ={
+          x: 280, z: 300
+        };
+        scale = 0.3;
+        break;
+    }
+    
+    switch ( value ) {
+      default:
+        return{
+          opacity:0,
+          transform: `translateX(${cordenadas.x}px) translateZ(${cordenadas.z}px)`,
+        }
+      case 0 : 
+        return {
+          opacity: 1,
+          transform: `translateX(0px) translateZ(0px) scale(${(scale)})`,
+          zIndex: 3,
+        
+        }
+      case 1: 
+        return{
+          opacity: .25,
+          transform: `translateX(${(cordenadas.x - cordenadas.x *0.5)*-1}px) translateZ(${cordenadas.z * 0.01 * -1}px ) scale(${(scale*.75)})`,
+          zIndex: 2,
+          cursor: 'pointer',
+        }
+      case -1: 
+        return{
+          opacity: .25,
+          transform: `translateX(${(cordenadas.x - cordenadas.x * 0.5) }px) translateZ(${cordenadas.z * 0.01 * -1}px) scale(${(scale*.75)})`,
+          zIndex: 2,
+          cursor: 'pointer',
+        }
+      case 2:
+        return{
+          opacity:0,
+          transform: `translateX(${(cordenadas.x - cordenadas.x *0.5)*-1}px) translateZ(${cordenadas.z * 0.01 * -1}px) scale(${(scale*.75)})`,
+        }
+      case -2:
+        return{
+          opacity: 0,
+          transform: `translateX(${cordenadas.x - cordenadas.x *0.5}px) translateZ(${cordenadas.z * 0.01 * -1}px) scale(${(scale*.75)})`,    
+        }
+      case 3:
+        return{ 
+          opacity:0,
+          transform: `translateX(${(cordenadas.x - cordenadas.x *0.5)*-1}px) translateZ(${cordenadas.z * 0.01 * -1}px scale(${(scale)}))`,
+        }
+      case -3:
+        return{
+          opacity: 0,
+          transform: `translateX(${cordenadas.x - cordenadas.x *0.5}px) translateZ(${cordenadas.z * 0.01 * -1}px) scale(${(scale)})`,
+         }
+      case 4: 
+        return{ 
+          opacity:0,
+          transform: `translateX(${(cordenadas.x - cordenadas.x *0.5)*-1}px) translateZ(${cordenadas.z * 0.01 * -1}px) scale(${(scale)})`,
+        }
+      case -4 :
+        return{ 
+          opacity: 0,
+          transform: `translateX(${cordenadas.x - cordenadas.x *0.5}px) translateZ(${cordenadas.z * 0.01 * -1}px) scale(${(scale)})`,
+        }
+    }
+  };
+
+  return (
+    &lt;div className="SliderWrapperMain">
+      &lt;div className="slideC">
+        {props.data.map((item, i) => (
+          &lt;React.Fragment key={item.id}>
+            &lt;div
+              className="slide"
+              style={{
+                background: item.bgColor,
+                ...getStyles(i)
+              }}
+            >
+              &lt;SliderContent {...item} activeSlide={activeSlide} index={i} prev={prev} next={next}/>
+            &lt;/div>
+            &lt;div
+              style={{
+                background: `linear-gradient(to bottom, ${item.bgColor}40, transparent)`,
+                ...getStyles(i)
+              }}
+            />
+          &lt;/React.Fragment>
+        ))}
+      &lt;/div>
+
+    &lt;/div>
+  );
+};
+
+/**
+ * Componente interno que muestra el contenido de cada diapositiva en el slider.
+ * @component
+ * @param {Object} props - Propiedades del componente.
+ * @param {number} props.activeSlide - Índice de la diapositiva activa actualmente.
+ * @param {number} props.index - Índice de la diapositiva actual.
+ * @param {function} props.prev - Función para retroceder a la diapositiva anterior.
+ * @param {function} props.next - Función para avanzar a la diapositiva siguiente.
+ * @returns {JSX.Element}
+ */
+const SliderContent = ({ activeSlide, index, prev, next, ...props }) => (
+  
+    &lt;>
+    {activeSlide === index ? 
+    //si esta activo se muestra esto
+      &lt;div className="slideWrapper">
+        &lt;div className="slideContent" >
+            &lt;img src={props.image} alt="" /> 
+            &lt;p>{props.description}&lt;/p>
+        &lt;/div>
+      &lt;/div>
+
+    :
+    //si esta inactivo esto
+    &lt;div className="slideWrapper">
+    &lt;div className="slideContent inactive" onClick={() => {if(index&lt;activeSlide){prev()}else{next()}}} key={index}>
+        &lt;div className="gradientCover" style={{ backgroundImage: `url(${props.image})` }}>&lt;/div>
+        &lt;h2>{props.title}&lt;/h2>
+    &lt;/div>
+  &lt;/div>
+    }
+    &lt;/>
+  );</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

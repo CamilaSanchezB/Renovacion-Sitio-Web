@@ -1,0 +1,39 @@
+.Typewriter{
+   margin-bottom: 2.1rem;
+   font-family: 'Avenir Black';
+}
+.Typewriter__wrapper{
+    background: #1DB7E6;  
+    background: -webkit-linear-gradient(to right, #fff,#1DB7E6, #1DB7E6); 
+    background: linear-gradient(to right, #fff,#1DB7E6, #1DB7E6); 
+    background-clip: text;-webkit-background-clip: text;color: transparent;
+    font-size: 56px;
+}
+.Typewriter__cursor{
+    color:white;
+    background-color: transparent;
+    font-size: 56px;
+}
+.Welcome2TextFlex .Typewriter{
+    margin-bottom: 0;
+}
+@media screen and (max-width: 1366px){
+    .Typewriter__cursor, .Typewriter__wrapper{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .Typewriter__cursor, .Typewriter__wrapper{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 758px){
+    .Typewriter__cursor, .Typewriter__wrapper{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 480px){
+    .Typewriter__cursor, .Typewriter__wrapper{
+        font-size: 24px;
+    }
+}

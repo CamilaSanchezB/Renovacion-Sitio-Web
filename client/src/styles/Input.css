@@ -1,0 +1,176 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0% 5%;
+}
+.gridInput {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  width: 45%;
+}
+.inputWrapper {
+  margin: 3px;
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  margin-left:10px
+}
+.input {
+  width: 95%;
+  height: 3.5em;
+  border: 2px solid white;
+  background: transparent;
+  border-radius: 18px;
+  margin: 5px 0px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  font-family: 'Avenir Regular';
+  caret-color:#1DB7E6;
+}
+
+.input:focus {
+  width: 95%;
+  height: 3.5em;
+  border: 2px solid transparent ;
+  background: 
+              linear-gradient(black, black) padding-box,
+              linear-gradient(to right, #1db7e6, #1f1d82) border-box;
+  border-radius: 18px;
+  margin: 5px 0px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  font-family: 'Avenir Regular';
+}
+
+
+.inputWrapper :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9) !important;
+  margin: 0em !important;
+  margin-left: 1.3em !important;
+  padding: 0.4em !important;
+  background-color: rgb(0, 0, 0) !important;
+  color: #1db7e6;
+}
+
+.inputWrapper :is(input:invalid){
+  color: beige; 
+}
+.inputWrapper :is(input:focus-visible, input:valid) {
+  border: 2px solid transparent ;
+  background: 
+              linear-gradient(black, black) padding-box,
+              linear-gradient(to right, #1db7e6, #1f1d82) border-box!important;
+  border-radius: 18px;
+}
+.p-inputwrapper-filled.flagsInput{
+  border: 2px solid transparent ;
+  background: 
+              linear-gradient(black, black) padding-box,
+              linear-gradient(to right, #1db7e6, #1f1d82) border-box!important;
+}
+.inputWrapper label {
+  font-size: 16px;
+  font-family: 'Avenir Regular';
+  position: absolute;
+  padding-top: 1em;
+  margin-left: 1em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(223, 223, 223);
+}
+
+.textarea {
+  color: white;
+  width: 44%;
+  border: 2px solid white ;
+  background:transparent;  
+  border-radius: 20px;
+  margin: 10px 0px;
+  margin-left: 5px;
+  padding: 20px 40px 80px 13px;
+  box-sizing: border-box;
+  font-family: 'Avenir Regular';
+  caret-color:#1DB7E6;
+}
+.textarea:focus{
+  border: 3px solid transparent !important;
+  background: 
+              linear-gradient(black, black) padding-box,
+              linear-gradient(to right, #1db7e6, #1f1d82) border-box!important;
+  outline: none;
+}
+.textarea::placeholder {
+  background-color: black;
+  color: rgb(223, 223, 223);
+  font-size: 16px;
+}
+.buttonInput {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.buttonInput:hover {
+  background-color: #dddddd;
+}
+@media all and (max-width: 1366px) {
+  .gridInput{
+    width: 45%;
+    gap: 0;
+  } 
+  .textarea {
+    width: 45%;
+    padding: 20px 40px 80px 40px;
+    margin-left:0;
+  }
+  .input{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .gridInput{
+    grid-template-columns: 1fr;
+    width: 90%;
+  } 
+  .textarea {
+    width: 88%;
+    padding: 20px 20px 80px 20px;
+  }
+  .input{
+    padding: 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  .gridInput{
+    grid-template-columns: 1fr;
+    width: 90%;
+  } 
+  .textarea {
+    width: 88%;
+    padding: 20px 20px 80px 20px;
+  }
+}
+@media all and (max-width: 480px) {
+  .row{
+    width: 90%;
+    flex-wrap: wrap;
+  } 
+  .textarea {
+    width: 85%;
+  }
+  .input{
+    padding: 20px;
+  }
+}

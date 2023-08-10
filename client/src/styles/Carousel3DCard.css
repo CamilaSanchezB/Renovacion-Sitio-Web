@@ -1,0 +1,40 @@
+.CardContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; 
+}
+.CardSection {
+  width: 100%;
+  height: auto;
+}
+.CardContainerFondo{
+  padding: 10px;
+  background: linear-gradient(to right, rgba(29, 183, 230, 1), rgba(31, 29, 130, 1)); 
+}
+.CardImage.redondeada img{
+  width: 350px;
+  height: 200px;
+  border-radius: 10px!important;
+}
+.CardText {
+  color:#fff;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: larger;
+  font-family: 'Avenir Black';
+  padding: 0.5em;
+}
+
+@media all and (min-width:801px) and (max-width: 1000px) {
+
+}
+@media all and (min-width:700px) and (max-width: 800px) {
+
+}
+@media all and (min-width:499px) and (max-width: 699px) {
+
+}
+@media all and (min-width:0px) and (max-width: 498px) {
+
+}

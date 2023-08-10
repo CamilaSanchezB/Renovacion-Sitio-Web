@@ -1,0 +1,33 @@
+.PartnersContent{
+  background: var(--var--secondary-color);  
+  background: -webkit-linear-gradient(to right,#1DB7E6, var(--var--secondary-color)); 
+  background: linear-gradient(to right, #1DB7E6, var(--var--secondary-color)); 
+}
+.PartnersBody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.PartnersBody img{
+  object-fit: contain;
+}
+.PartnersHead{
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 480px) {
+  .PartnersBody img{
+    object-fit: contain;
+    width: 170px;
+    height: 100px;
+    margin: 0 20px;
+  }
+  .PartnersBody{
+    gap: 0px;
+  }
+  .PartnersHead{
+    margin-bottom: 0px;
+  }
+}

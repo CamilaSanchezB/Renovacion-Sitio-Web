@@ -1,0 +1,105 @@
+.defaultcardSection {
+
+  height: auto;
+  scroll-snap-align: start;
+}
+.defaultcardSectionClick:hover{
+  transform: scale(0.96);
+  cursor: pointer;
+}
+.cardContainer{
+  width: 85%;
+  min-height: 100%;
+  border-radius: 20px; 
+}
+.cardContainerFondo{
+  background-color: #434242;
+  background: linear-gradient(to right, rgba(29, 183, 230, 1), rgba(31, 29, 130, 1));
+  
+}
+.defaultcardImage {
+  width: 100%;
+}
+.defaultcardImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0  0;
+}
+.defaultcardImage.redondeada img{
+  border-radius: 20px!important
+}
+.defaultcardText {
+  color:#fff;
+  height: 100%;
+  min-width: 200px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: larger;
+  font-family: 'Avenir Black';
+  padding: 0.5em;
+}
+@media all and (min-width:801px) and (max-width: 1000px) {
+  .defaultcardSection{
+    flex: 0 0 33.3%;
+  }
+  .cardContainer{
+    width: 96%;
+    margin: 0;
+    margin-left: 2%;
+  }
+  .defaultcardImage {
+    margin: 0;
+  }
+}
+@media all and (min-width:700px) and (max-width: 800px) {
+  .defaultcardSection{
+    flex: 0 0 50%;
+    margin-bottom: 1em;
+  }
+  .cardContainer{
+    width: 96%;
+    margin: 0;
+    margin-left: 2%;
+  }
+  .defaultcardImage {
+    margin: 0;
+  }
+  .defaultcardText{
+    text-align: center;
+  }
+}
+@media all and (min-width:499px) and (max-width: 699px) {
+  .defaultcardSection{
+    flex: 0 0 100%;
+    margin-bottom: 1em;
+  }
+  .cardContainer{
+    width: 96%;
+    margin: 0;
+    margin-left: 2%;
+  }
+  .defaultcardImage {
+    margin: 0;
+  }
+  .defaultcardText{
+    text-align: center;
+  }
+}
+@media all and (min-width:0px) and (max-width: 498px) {
+  .defaultcardSection{
+    flex: 0 0 100%;
+    margin-bottom: 1em;
+  }
+  .defaultcardText{
+    text-align: center;
+  }
+  .cardContainer{
+    width: 96%;
+    margin: 0;
+    margin-left: 2%;
+  }
+  .defaultcardImage {
+    margin: 0;
+  }
+}

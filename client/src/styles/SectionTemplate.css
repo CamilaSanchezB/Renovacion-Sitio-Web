@@ -1,0 +1,179 @@
+.sectiontemplateSection{
+    background-color: black;
+    padding-top: 2em;
+    padding-bottom: 4.2em;
+    margin: 0;
+}
+.sectiontemplateSection.margenGrandeSuperior{
+    padding-top: 8em;
+}
+.margenMedianoSuperior{
+    padding-top: 4em;
+}
+.sectiontemplateTitle{
+    font-family: 'Avenir Black';
+    color: white;
+    font-size: 46px;
+}
+.sectiontemplateWrap{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.sectiontemplateContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1em;
+    width: 100%;
+}
+.cardRecognitionsRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+    background: var(--gradient, linear-gradient(90deg, #1DB7E6 18.75%, #1F1D82 89.44%));
+}
+.cardRecognitions{
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 0;
+    height: 200px;
+}
+.cardRecognitions img{
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    height: 200px;
+}
+
+.containerCardsInvestors{
+   display: flex;
+}
+.cardInvestors{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   border-radius: 20px;
+   height: 183px;
+}
+
+.cardInvestors img{
+    width: 264px;
+    border-radius: 20px;
+    height: 183px;
+}
+
+.RecognitionsCircles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+.containerCardsRecognitions{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-top: 6em;
+}
+
+.RecognitionsText{
+    width: 75%;
+    
+    font-size: 16px;
+}
+
+@media all and (max-width: 1440px) {
+    .RecognitionsCircles{    
+        flex-wrap: wrap;
+
+    }
+    .RecognitionsCircles img{
+        margin-top: 7%;
+    }
+}
+@media all and (max-width: 1366px){
+    
+    .margenMedianoSuperior{
+        padding: 0;
+    }
+    .cardRecognitions img{
+        height: 100%;
+    }
+    .sectiontemplateSection{
+        margin-bottom: 100px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .sectiontemplateContainer{
+        grid-template-columns: auto auto;
+        gap: 3em;   
+    }
+    .containerCardsRecognitions{
+        grid-template-columns: none;
+        
+    }   
+  }
+  @media all and (max-width: 768px) {
+    .sectiontemplateContainer{
+        grid-template-columns: auto auto;
+        gap: 2em;   
+    }
+    .containerCardsRecognitions{
+        grid-template-columns: auto;
+        gap: 350px;
+    }
+    .cardRecognitions{
+        grid-template-columns: 90%;
+        
+    }
+    .cardRecognitions{
+        margin-left: 10%;
+    }
+    .cardRecognitions img{
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+    }
+    .cardRecognitionsRight{
+        border-radius: 0 0 20px 20px;
+    }
+    .sectiontemplateSection{
+        padding-bottom: 350px;
+    }
+    .RecognitionsText{
+        margin-top: 2.5em;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    .containerCardsRecognitions{
+        grid-template-columns: auto;
+        gap: 325px;
+    }
+    .sectiontemplateContainer{
+        grid-template-columns: auto ;
+        gap: 1em;   
+    }
+    .sectiontemplateSection{
+        padding-bottom: 0;
+        background-size: 2000px 20000px!important;
+    }
+    .cardRecognitions img{
+        height: 200px;
+    }
+    .containerCardsRecognitions{
+        margin-top: 2em;
+        margin-bottom: 400px;
+    }
+    .RecognitionsCircles{
+        margin-top: 20px;
+    }
+    .cardRecognitions{
+        grid-template-columns: 95%;
+    }
+    .cardRecognitions{
+        margin-left: 5%;
+    }
+
+  }

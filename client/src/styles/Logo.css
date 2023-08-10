@@ -1,0 +1,13 @@
+.small{
+    width: 100px;
+}
+.medium{
+    width: 135px;
+}
+.large{
+    width: 300px;
+}
+.extralarge{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,14 @@
+.Background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.mundoContent{
+  width: 45%;
+  height: auto;
+  color: white;
+}
+.mundoModel {
+  width: 45%;
+  height: auto;
+}

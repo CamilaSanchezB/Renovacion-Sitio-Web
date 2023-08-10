@@ -1,0 +1,222 @@
+.title{
+  font-family: 'Avenir Black';
+  font-weight: bold;
+  font-size:50px;
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titleWrapper{
+  display: flex;
+  justify-content: center;
+}
+.title.left{
+  margin-left: 0!important;
+  text-align: left;
+}
+.title.left.m10{
+  margin-left: 10%!important;
+}
+.title.left.Tech{
+  margin-top: 0;
+}
+.titleTeam{
+  font-size: 56px!important;
+  color: white;
+  font-weight: 900;
+}
+.division{
+  margin-top: 0!important;
+}
+.divisionTop{
+  margin-bottom: 0!important;
+}
+/* Investors */
+.investors{
+  margin-left: 10%!important;
+}
+.titleInvestors{
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10%;
+}
+/* Works.js */
+.titleWorks{
+  text-align: left;
+  max-width: 100%;
+  margin-bottom: 10px;
+  font-size: 56px;
+  line-height: 130%;
+  display: flex;
+  flex-direction: column;
+}
+.titleWorks span{
+  background: var(--var--secondary-color);  
+  background: -webkit-linear-gradient(to right,#1DB7E6, var(--var--secondary-color)); 
+  background: linear-gradient(to right, #1DB7E6, var(--var--secondary-color)); 
+  background-clip: text;-webkit-background-clip: text;color: transparent;
+  font-weight: bolder;
+}
+.worksSection .titleTech{
+  max-width: 70%;
+}
+/* Welcomejs */
+.titleWelcome{
+  text-align: left;
+  margin-left: 0;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.titleWelcome span{
+  background: #1DB7E6;  
+  background: -webkit-linear-gradient(to right, #fff,#1DB7E6, #1DB7E6); 
+  background: linear-gradient(to right, #fff,#1DB7E6, #1DB7E6); 
+  background-clip: text;-webkit-background-clip: text;color: transparent;
+  font-weight: bolder;
+}
+.titleAplications{
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0%;
+}
+/* Connectivity */
+.titleConnectivity{
+  font-size: 56px;
+}
+.titleConnectivity span{
+  background: #99946A;  
+  background: -webkit-linear-gradient(to right, #1DB7E6, #1E78BD); 
+  background: linear-gradient(to right, #1DB7E6, #1E78BD); 
+  background-clip: text;-webkit-background-clip: text;color: transparent;
+  font-weight: bolder;
+  display: inline-flex;
+}
+/*Technologies*/
+.titleTech{
+  font-size:56px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.technologySection .titleTech{
+  max-width: 70%;
+}
+/* Footer2 */
+.titleFooter2{
+  font-size:56px;
+  max-width: 60%;
+}
+/* Roadmap */
+.titleRoadmap{
+  margin-left:10%;
+  text-align:left;
+  font-weight: bold;
+  font-size:56px;
+  color: white;
+}
+/* History */
+.titleHistory{
+  max-width: 70%;
+  font-size: 56px;
+  margin: 0;
+}
+.titleSectionHistory{
+  max-width: 30%;
+  font-size: 50px;
+  margin: 0;
+}
+/* Partners */
+.titlePartners{
+  margin: 0;
+  width: 100%!important;
+}
+/* Modelo 3D Section*/
+.titleWrapper3D{
+  justify-content: flex-start;
+}
+.title3D {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 56px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1366px) {
+  .titleConnectivity {
+    font-size: 40px !important;
+    margin-bottom: 0;
+  }
+  .title{
+    font-size: 40px!important;
+  }
+  .titleWorks{
+    line-height: 130%;
+    margin-bottom: 0;
+  }
+  .titleSectionHistory{
+    max-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .titleConnectivity {
+    font-size: 48px !important;
+  }
+  .title{
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titleConnectivity {
+    font-size: 36px !important;
+  }
+  .title{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .titleWorks{
+    font-size: 24px !important;
+  }
+
+  .titlePartners{
+    margin-bottom: 20px;
+  }
+  .titleConnectivity {
+    font-size: 24px !important;
+  }
+
+  .sectiontemplateSection{
+    margin: 0!important;
+  }
+
+  .titleAplications{
+    margin-left: 10%;
+    line-height: 130%;
+    margin-bottom: 2%;
+  }
+  .titleSectionHistory{
+    max-width: 60%;
+    margin: 0;
+  }
+  .titleTech{
+    margin: 0;
+  }
+  .divisionTop{
+    padding-top: 20px;
+  }
+  .title{
+    font-size: 24px!important;
+  }
+  .titleWrapperWelcome{
+    width: 300px;
+  }
+  .titleTeam{
+    font-size: 24px !important;
+    text-align: center!important;
+    margin: 0!important;
+  }
+}

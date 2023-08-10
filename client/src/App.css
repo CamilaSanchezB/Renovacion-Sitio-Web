@@ -1,0 +1,38 @@
+@import "./styles/fonts.css";
+body {
+  font-family: 'Avenir Regular';
+  background-color: var(--var--primary-black);
+  font-display: swap;
+}
+html{
+  background-color: var(--var--primary-black);
+   font-display: swap;
+}
+
+:root{
+  --var--primary-color: #1DB7E6;
+  --var--secondary-color: #1F1D82;
+  --var--primary-black: #000000;
+  --var--secondary-black: #1C1C22; 
+  --var--midtone: #6F6F85; 
+  --var--primary-white:#FFFFFF;
+  --var--secondary-white:#F0F2F5;
+}
+
+p{
+color: white;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--var--primary-color);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}

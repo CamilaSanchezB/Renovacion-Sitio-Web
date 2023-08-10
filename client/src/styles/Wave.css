@@ -1,0 +1,58 @@
+.wave{
+   background: var(--var--secondary-color);  
+   background: -webkit-linear-gradient(to right,#1DB7E6, var(--var--secondary-color)); 
+   background: linear-gradient(to right, #1DB7E6, var(--var--secondary-color)); 
+   height: 100px;
+   width: 100%;
+   z-index: 5;
+}
+.WaveWrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.waveBottom{
+   clip-path: ellipse(60% 100% at bottom center);
+   position: relative;
+   top: 1px;
+}
+.waveTop{
+   clip-path: ellipse(60% 100% at top center);
+   position: relative;
+   bottom: 1px;
+}
+.waveBlackTop{
+   clip-path: ellipse(55% 100% at top center);
+   background: black;
+   position: absolute;
+}
+.waveBlackBottom{
+   clip-path: ellipse(55% 100% at bottom center);
+   background: black;
+   position: absolute;
+}
+.waveFondoBottom{
+   clip-path: ellipse(58% 97% at bottom center);
+   background: rgb(6,7,12);
+   background: linear-gradient(90deg, rgba(6,7,12,1) 0%, rgba(5,6,11,1) 35%, rgba(4,5,9,1) 100%);
+   position: absolute;
+}
+.wave3DTop{
+   clip-path: ellipse(62% 100% at top center);
+   background: black;
+   position: absolute;
+
+}
+.wave3DBottom{
+   clip-path: ellipse(62% 100% at bottom center);
+   background: black;
+   position: absolute;
+}
+.teamWave{
+   margin-top:5%;
+}
+@media screen and (max-width: 480px) {
+   .wave{
+      height: 50px;
+   }
+}

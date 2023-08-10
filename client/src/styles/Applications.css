@@ -1,0 +1,74 @@
+.Applications{
+    margin: 8% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Applications .Typewriter{
+    position: absolute;
+    top: 4.6rem;
+    left: 320px;
+}
+.Applications .Typewriter__wrapper{
+    background: var(--var--secondary-color);  
+    background: -webkit-linear-gradient(to right, var(--var--primary-color), var(--var--secondary-color));
+    background: linear-gradient(to right, var(--var--primary-color), var(--var--secondary-color));
+    background-clip: text;-webkit-background-clip: text;color: transparent;
+    font-size: 50px;
+}
+.textApplications{
+    position: relative;
+}
+@media all and (max-width: 1366px) {
+    .Applications{
+        scale: 80%;
+        margin: 0%;
+    }
+    .Applications .Typewriter{
+        top: 4rem;
+        left: 250px;
+    }
+    .Applications .Typewriter__wrapper{
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .Applications .Typewriter{
+        top: 3.5rem;
+        left: 230px;
+    }
+    .Applications .Typewriter__wrapper{
+        font-size: 38px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .Applications .Typewriter{
+        top: 2.56rem;
+        left: 200px;
+    }
+    .Applications .Typewriter__wrapper{
+        font-size: 32px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .Applications .Typewriter{
+        top: 1.75rem;
+        left: 190px;
+    }
+    .Applications .Typewriter__wrapper{
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .Applications .Typewriter{
+        top: 1.7rem;
+        left: 180px;
+    }
+    .Applications .Typewriter__wrapper{
+        font-size: 24px;
+    }
+}

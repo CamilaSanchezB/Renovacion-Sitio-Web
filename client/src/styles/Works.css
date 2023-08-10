@@ -1,0 +1,19 @@
+.worksSection{
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center top;
+   width: 1920px;
+   height: 1080px;
+}
+@media screen and (max-width: 1366px) {
+   .worksSection{
+      width: 1366px;
+      height:768px;
+   }
+}
+@media screen and (max-width: 1024px) {
+   .worksSection{
+      width: auto;
+      height:auto;
+   }
+}

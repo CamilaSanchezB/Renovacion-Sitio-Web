@@ -1,0 +1,11 @@
+.Footer2{
+    padding: 2% 0%;
+    background: conic-gradient(from -57deg at 68.89% 46.00%, #070A0F 0deg, var(--var--secondary-color) 120.00000357627869deg, #1DB7E6 240.00000715255737deg, #070A0F 310.8970355987549deg);
+}
+.Footer2Content{
+    padding: 8% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(45px);
+}

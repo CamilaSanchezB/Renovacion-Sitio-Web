@@ -1,0 +1,147 @@
+.number {
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  height: 160px;
+}
+.number p{
+  color: transparent;
+  font-family: 'Avenir Black';
+  paint-order: stroke fill;
+  -webkit-text-stroke: 2px white;
+}
+
+
+.counterWrap {
+  background: transparent!important;  
+  justify-content: space-around;
+  align-items: flex-end;
+  display: flex;
+  margin-bottom: 0px;
+  width: 70%;
+  border: 1px solid #1DB7E6;
+  border-bottom: 0px;
+  border-image-slice: 1;
+  border-radius: 30px 30px 0px 0px;
+  height: 270px;
+  background-blend-mode: darken;
+  background: linear-gradient(135deg, rgba(13, 178, 229, 0.2) 0%, rgba(31, 29, 130, 0.2) 100%)!important;
+  padding-bottom: 20px;
+}
+.textStyle {
+  font-family: 'Avenir Regular';
+  font-weight:300;
+  color: white;
+  font-size: 24px;
+  display: block;
+  max-width: 290px;
+  margin: 0 auto;
+  text-align: left;
+}
+.cardCounter{
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 33.3%;
+  align-content: center;
+  align-items: center;
+}
+
+.svgTitulo{
+display: flex;
+padding-top: 15px;
+}
+.textCounter{
+  max-width: 145px;
+}
+/* Media queries */
+@media (max-width: 1366px) {
+  .counterWrap{
+    height: 250px;
+  }
+  .number{
+    height: 100px;
+  }
+  .number p{
+    font-size: 40px;
+    width: 250px;
+  }
+  .textStyle {
+    font-size: 25px;
+    height: 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .number {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 65px;
+  }
+  .textStyle {
+    font-size: 25px!important;   
+    width: 200px;
+    text-align: left;
+  }
+  .counterWrap{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding-bottom: 0px;
+    height: 600px;
+  }
+  .number p{
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+  }
+  .cardCounter{
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  .svgTitulo{
+    width: 55%;
+    justify-content: space-between;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .counterWrap{
+    width: 80%;
+  }
+  .svgTitulo{
+    width: 70%;
+    padding-top: 5px;
+  }
+  .textStyle{
+    font-size: 20px!important;   
+    width: 150px;
+  }
+  .number p{
+    font-size: 40px;
+    
+  }
+  
+}
+@media (max-width: 480px) {
+  .number p{
+    font-size: 35px;
+  }
+  .textStyle{
+    font-size: 18px!important;   
+    width: 105px;
+  }
+  .svgTitulo{
+    width: 65%;
+    padding-top: 5px;
+  }
+}

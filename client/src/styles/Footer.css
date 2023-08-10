@@ -1,0 +1,168 @@
+@import './fonts.css';
+.wrapFooter{
+    font-family: 'Avenir Regular', sans-serif;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0;
+    padding-top: 5em;
+    padding-bottom: 3em;
+}
+.socialmedia{
+    gap: 1%;
+    margin-top: 2.5%;
+    color: white;
+}
+.socialmedia a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    z-index: 3;
+    position: relative;
+}
+.divisor{
+    border: 1px solid #252525!important;
+    max-width: 85%;
+}
+.flexRowEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.socialmediaLinkWrapper {
+    --border-radius: 100%;
+    --border-width: 3px;
+    appearance: none;
+    position: relative;
+    padding: 1em 1em;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-position 0.1s ease-in-out;
+  }
+  
+  .socialmediaLinkWrapper::before {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0.15em;
+    top: 0.5em;
+    width: 42px;
+    height: 42px;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: linear-gradient(90deg, #1DB7E6 18.75%, var(--var--secondary-color) 89.44%);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .socialmediaLinkWrapper:hover::before {
+    z-index: 1;
+    background-position: 100% 100%;
+    -webkit-mask-image: none;
+    mask-image: none;
+    -webkit-mask-origin: none;
+    mask-origin: none;
+    -webkit-mask-clip: none;
+    mask-clip: none;
+    mask-composite: exclude;
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out; /* Add the transition property for hover */
+  }
+
+  .socialmedia a::before{
+    z-index: 1;
+}
+  
+.containerFooter{
+    margin: 0 10%;
+    margin-bottom: 0.3%;
+    text-align: left;
+    padding-top: 3.5%;
+}
+.flexFooter{
+    display: flex;
+  justify-content: space-between;
+}
+.flexFooterItemLeft{
+    align-self: flex-start;
+}
+.flexFooterRightItems{
+    display: flex;
+    align-items: center;
+}
+.linkFooter{
+    scroll-behavior: smooth;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    margin: 0 1em 0 1em;
+}
+
+@media all and (max-width: 1366px) {
+    .containerFooter{
+        padding: 0;
+    }
+    .socialmedia{
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .socialmedia{
+        gap: 4%;
+    }
+    .legal{
+        gap: 8%;
+    }
+    .flexRowEnd.legal{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .flexRowEnd.socialmedia{
+        flex-direction: row;
+    }
+    .gridFooter{
+        gap: 1em;
+    }
+    .imgContainerFooter img{
+        width: 40%;
+    }
+    .linkFooter{
+        font-size: medium;
+    }
+}
+@media all and (max-width: 1000px) {
+    .imgContainerFooter img{
+        width: 30%;
+    }
+    .legal{
+        gap: 6%;
+    }
+    .socialmedia{
+        gap: 3%;
+    }
+}
+@media all and (max-width: 480px) {
+    .gridFooter{
+        font-size: smaller;
+    }
+    .flexFooter{
+        flex-wrap: wrap;
+        justify-content: center!important;
+    }
+    .flexRowEnd{
+        justify-content: center!important;
+    }
+}

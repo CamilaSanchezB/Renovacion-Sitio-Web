@@ -1,0 +1,143 @@
+.Carousel3DSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.Carousel3DTitle{
+    color: #fff;
+    font-size: 56px;
+    font-family: 'Avenir Black';
+}
+.ContainerCarousel{
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: block;
+    width: 800px;
+    height: 647px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.Carousel3D {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s,visibility 500ms ease 0s;
+    position: absolute;
+    border-radius: 12px;
+    background: linear-gradient(to right, rgba(29, 183, 230, 1), rgba(31, 29, 130, 1))!important; 
+}
+.CardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+}
+.CardSection {
+    width: 100%;
+    height: 100%;
+}
+.CardContainerFondo{
+    background: linear-gradient(to right, rgba(29, 183, 230, 1), rgba(31, 29, 130, 1))!important; 
+    border-radius: 10px;
+}
+.CardImage.redondeada img{
+    width: 100%;
+    height: 400px;
+}
+.CardText {
+    color:#fff;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 24px;
+    font-family: 'Avenir Regular';
+    margin-bottom: 10px;
+}
+.defaultStyleCard3D{
+    opacity:0;
+    transform: translateX(1000px) translateY(1000px);
+}
+@media screen and (max-width: 1366px) {
+    .Carousel3DTitle {
+        font-size: 40px;
+        z-index: 6;
+    }
+    .Carousel3DTitle h3{
+        margin-bottom: 30px;
+    }
+    .ContainerCarousel{
+        width: 700px;
+        height: 570px;
+    }
+    .CardImage.redondeada img{
+        height: 350px;
+    }
+    .CardText{
+        margin-bottom: 0;
+    }
+    .buttonCarousel3D{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .Carousel3DTitle {
+        font-size: 3.5rem;
+        z-index: 6;
+    }
+    .CardText {
+        font-size: 1.3rem;
+    }
+    .ContainerCarousel{
+        width: 600px;
+        height: 535px;
+    }
+    .CardImage.redondeada img{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Carousel3DTitle {
+        font-size: 3rem;
+    }
+    .CardText {
+        font-size: 1.2rem;
+    }
+    .ContainerCarousel{
+        width: 365px;
+        height: 430px;
+    }
+    .CardImage.redondeada img{
+        padding-top: 1em;
+        width: 100%;
+        height: 210px;
+    }
+    .Carousel3D .CardText p{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Carousel3DTitle {
+        font-size: 2.5rem;
+    }
+    .CardText {
+        font-size: 1rem;
+    }
+    .ContainerCarousel{
+        width: 290px;
+        height: 420px;
+    }
+    .CardImage.redondeada img{
+        padding-top: 1em;
+        width: 100%;
+        height: 210px;
+    }
+}

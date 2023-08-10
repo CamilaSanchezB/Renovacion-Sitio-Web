@@ -1,0 +1,13 @@
+.contenedorTBD{
+    justify-content: center;
+    color: #CB3030;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 30px;
+}
+.ServicesSection{
+    margin: 5% 10%;
+}

@@ -1,0 +1,159 @@
+.Welcome{
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+}
+.welcomeContainer{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5% 10%;
+  padding: 20px;
+  padding-left: 0;
+  display: flex;
+  overflow-x: hidden;
+}
+.leftColumnWelcome{
+  padding-top: 130px;
+  flex: 1;
+}
+.rightColumnWelcome{
+  flex: 1;
+}
+.welcomeContainerLanding{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0% 10% 0% 10%;
+  padding: 8% 20px 9% 0px;
+  display: block;
+  overflow-x: hidden;
+}
+.leftColumnWelcomeLanding{
+  position: relative;
+  max-width: 70%;
+  padding-top: 130px;
+  z-index: 2;
+}
+.boxWelcome{
+  font-size: larger;
+  margin-bottom: 20px;
+  max-width:fit-content;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px;
+  border-radius: 16px;
+  border-style: solid;
+  text-align: start;
+  color: #d9d9d9;
+}
+.boxWelcome.Tech{
+  padding-left: 70px;
+  padding-right: 70px;
+  color: white;
+}
+.Welcome2Container{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5% 10%;
+  padding: 20px;
+  padding-left: 0;
+  display: flex;
+  overflow-x: hidden;
+}
+.Welcome3{
+  overflow-x: hidden;
+}
+.WelcomeTechSection{
+  margin: 5% 10%;
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
+.welcomeWrapper{
+ padding-bottom: 27px;
+}
+
+@media screen and (max-width: 1366px) {
+  .Welcome{
+    background-size: 1366px 768px;
+  }
+  .leftColumnWelcomeLanding{
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Welcome{
+    background-size: 1024px 768px;
+  }
+  .welcomeContainer{
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 5%;
+  }
+  .leftColumnWelcome{ 
+    margin-top: 0;
+    min-width: 50%;
+    max-width: 90%;
+  }
+  .rightColumnWelcome {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    max-width: 90%;
+  }
+  .welcomeContainer img {
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .welcomeWrapper{
+    padding-bottom: 15px;
+  }
+
+  .welcomeContainer{
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 5%;
+  }
+  .leftColumnWelcome{ 
+    margin-top: 0;
+    min-width: 50%;
+    max-width: 90%;
+  }
+  .rightColumnWelcome {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    max-width: 90%;
+  }
+  .welcomeContainer img {
+    width: 100%!important;
+    height: 100%!important;
+  }
+  .leftColumnWelcomeLanding{
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .welcomeWrapper{
+    padding-bottom: 5px;
+  }
+
+  .rightColumnWelcome {
+    margin-top: 10%;
+  }
+  .leftColumnWelcomeLanding{
+    padding-top: 70px;
+  }
+  .boxWelcome{
+    max-width: 300px;
+    width: 230px;
+  }
+}

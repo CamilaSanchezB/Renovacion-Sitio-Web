@@ -1,0 +1,33 @@
+.elementContainerNoticia {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  margin-top: 20px;
+  width: 100%;
+}
+.carouselAppNoticia{
+  margin-left: 3%;
+}
+.carouselSectionNoticia{
+  margin: 0;
+  background-color: black;
+  padding-bottom: 5em;
+  margin-top: 5%;
+}
+.carouselTitleNoticia{
+  font-family: 'Avenir Black';
+  text-align: center;
+  font-size: 46px;
+  color: white;
+  padding-bottom: 3%;
+}
+@media all and (max-width: 1024px) {
+  .carouselAppNoticia{
+    margin-left: 0;
+  }
+  .elementContainerNoticia {
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,166 @@
+.elementContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin:0;
+  padding: 50px 0;
+  background: conic-gradient(from -57deg at 68.89% 46.00%, #070A0F 0deg, var(--var--secondary-color) 120.00000357627869deg, #1DB7E6 240.00000715255737deg, #070A0F 310.8970355987549deg);
+}
+.elementSection {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 90px;
+  backdrop-filter: blur(45px);
+}
+.elementText {
+  color:#fff;
+  width: 50%;
+  padding: 20px;
+  padding-left:10%;
+}
+.elementTitle{
+  color: #FFF;
+  font-size: 56px;
+  font-family: 'Avenir Black';
+}
+.elementImage {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 0 10%;
+  justify-content: center;
+}
+.elementImage img {
+  margin-top: 10%;
+  width: 720px;
+  height: 720px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.paragraphCarousel{
+  text-align: left;
+  width:100%;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1366px) {
+  .elementImage img{
+    margin-top: 20%;
+    height: 470px;
+    width: 568px;
+  }
+  .elementContainer{
+    margin-bottom:0;
+    padding: 0;
+  }
+  .elementText {
+    margin-top: 45px;
+  }
+  .elementText p{
+    width: 100%;
+    font-size: 15px;
+  }
+  .elementTitle{
+    font-size: 40px;
+  }
+} 
+@media screen and (max-width: 1024px){
+  .elementImage{
+    margin-right:10%;
+    align-items: flex-start;
+  }
+  .elementImage img {
+    width: 400px;
+    height: 260px;
+    margin-top: 25%;
+    margin-left: 1%;
+  }
+  .elementText{
+    margin-right:0;
+  } 
+  .elementText p{
+    width: 100%;
+    font-size: 14px;
+  }
+} 
+@media screen and (max-width: 768px){
+  .elementContainer{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .elementSection{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .elementImage{
+    margin: 0;
+    align-items: flex-end;
+    height: fit-content;
+  } 
+  .elementImage img {
+    width: 100%;
+    margin: 0;
+    margin-top: 35px;
+  }
+  .elementText{
+    display: flex;
+    padding:0;
+    width:70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .elementText p {
+    width: 100%;
+  }
+  .elementTitle{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .elementContainer{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .squareCarousel {
+    width: 60px;
+    height: 60px;
+    border-radius:10px;
+  }
+  .containerCarousel {
+    margin-top:0;
+    display: flex;
+    justify-content: center;
+  }
+  .cardTextCarouselHome{
+    font-size: 12px;
+    margin: 0;
+  }
+  .elementTitle{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .elementImage{
+    margin-top: 20px;
+    width: 80%;
+  }
+  .elementText{
+    width: 90%;
+  } 
+  .elementText p{
+    width: 100%;
+    text-align: justify;
+  }
+}

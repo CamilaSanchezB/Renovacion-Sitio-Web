@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('../fonts/AvenirMedium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('../fonts/AvenirBlack.ttf') format('opentype');
+}
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url('../fonts/AvenirHeavy.ttf') format('opentype');
+}
+@font-face {
+  font-family: "Avenir Light";
+  src: local("AvenirLight"),
+  local("AvenirLight"),
+  url('../fonts/AvenirLight.ttf') format('opentype');
+} 
+@font-face {
+  font-family: "Avenir Regular";
+  src: local("AvenirRegular"),
+  local("AvenirRegular"),
+  url('../fonts/AvenirRegular.ttf') format('opentype');
+} 

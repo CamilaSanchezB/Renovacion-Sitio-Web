@@ -1,0 +1,55 @@
+.History {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    height: 1000px;
+}
+.p-Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.p-History{
+    font-family: 'Avenir Black';
+    font-weight: bold;
+    color: #D9D9D9;
+    max-width: 62%;
+    text-align: center;
+}
+.img-Wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-Wrapper img {
+    width: 100%;
+    max-width: 400px;
+    margin: 5px 0.5em;
+}
+@media all and (max-width: 1366px) {
+    .History {
+        height: 700px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .History {
+        height: 800px;
+    }
+}
+@media all and (max-width: 768px) {
+    .img-Wrapper img {
+        max-width: 90%;
+        margin-bottom: 1em;
+    }
+    .History {
+        height: 800px;
+    }
+}
+
+@media all and (max-width: 468px) {
+        .History {
+        height: 650px;
+    }
+}

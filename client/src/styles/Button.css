@@ -1,0 +1,283 @@
+.button{
+    background-color: #D9D9D9!important;
+    border:transparent;
+    padding:7px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family: 'Avenir Black';
+    font-size:18px;
+    width:200px;
+    height:48px;
+    color:black;
+    cursor: pointer;
+}
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+}
+.button:hover{
+    transform: translate(0px, -2px);
+    box-shadow: 0px 4px 10px white15; 
+}
+.button:active{
+    transform: translate(0px, 0px);
+    opacity: .9;
+}
+/* Works.js */
+.buttonWrapperWorks{
+    justify-content: left;
+}
+
+.worksSection .buttonHistory{
+    width: 200px;
+}
+
+/* Welcome.js */
+.buttonWelcome{
+    height: 62px;
+    width: 230px;
+    font-family: 'Avenir Regular';
+    font-size: 20px;
+    margin-left: 1%;
+    background: var(--var--secondary-color);  
+    background: -webkit-linear-gradient(135deg, var(--var--primary-color), var(--var--secondary-color)); 
+    background: linear-gradient(135deg, var(--var--primary-color), var(--var--secondary-color));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    color: white;
+    border-radius: 50px;
+}
+.buttonWrapperWelcome{
+    justify-content: left;
+}
+.buttonWelcome:hover{
+    border-radius: 50px;
+}
+
+
+/*History About Us*/
+.buttonHistory{
+    align-items: center;
+    height: 62px;
+    width: 350px;
+    font-family: 'Avenir Regular';
+    font-size: 20px;
+    background: var(--var--secondary-color);  
+    background: -webkit-linear-gradient(to right, var(--var--primary-color), var(--var--secondary-color)); 
+    background: linear-gradient(to right, var(--var--primary-color), var(--var--secondary-color));
+    color: white;
+    border-radius: 50px;
+}
+.buttonWrapperRecognitions{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.buttonRecognitions{
+    background: none!important;
+    color: white;
+}
+
+/* Carousel 3D */
+.buttonWrapperCarousel3D
+.buttonCarousel3D{
+    margin-left: auto;
+    margin-right: 15px;
+    background: none !important;
+    color: white;
+    font-family: 'Avenir Regular';
+    }
+/*Contact Home*/
+.buttonWrapperFormHome{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 32%;
+    justify-content: flex-end; 
+}
+.buttonFormHome{
+    margin-left: 1%;
+    background: var(--var--secondary-color);  
+    background: -webkit-linear-gradient(to right, var(--var--primary-color), var(--var--secondary-color)); 
+    background: linear-gradient(to right, var(--var--primary-color), var(--var--secondary-color));
+    color: white;
+    border-radius: 50px;
+}
+/* Contact Navbar*/
+.buttonContact{
+    background-color: transparent!important;
+    border-radius: 30px;
+    border:2px solid #EB691A;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #EB691A;
+    width: 130px;
+    height: 2.6rem;
+    margin-right: 4em;
+    transition: all .25s cubic-bezier(0.62, 0.15, 0.36, 1);
+}
+
+.buttonContact:hover{
+    background-color:#EB691A!important;
+    color: white;
+}
+
+
+/* Footer2.js */
+.buttonFooter2{
+    margin-top:3em;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #D9D9D9!important;
+    color: black;
+}
+.button.buttonFooter2{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+/*Modal*/
+.buttonModal{
+    margin-left: auto;
+    background-color: #0054ae!important;
+}
+/* MDQSATModels.css */
+.buttonM3DS{
+    width: 100%;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 10px;
+}
+/* Welcome3.js */
+.buttonWelcome3{
+    margin-left: 0%;
+    width: fit-content;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+.buttonWrapperWelcome3{
+    justify-content: left;
+}
+/* Missions.css */
+.buttonWrapperMissionsA{
+    position: absolute;
+    z-index: 1;
+    left:20%;
+    bottom: -3%;
+}
+.buttonMissionsA{
+    width: 240px;
+    border-radius: 8px;
+    background-color: #D9D9D9!important;
+    color: black!important;
+}
+.buttonMissionsB{
+    width: 240px;
+    border-radius: 8px;
+    background-color: #D9D9D9!important;
+    color: black!important;
+}
+.buttonWrapperMissionsB{
+    position: absolute;
+    z-index: 1;
+    right:20%;
+    bottom: -3%;
+}
+/*News.js*/
+.buttonNewsDetail{
+    left: 25%;
+    bottom:30%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 0%;
+    text-align: center;
+    width: 250px;
+    border-radius:10px;
+    font-weight: 600;
+}
+@media all and (max-width: 1366px) {
+    .buttonNewsDetail{
+        height: 40px;
+        margin-top: 5px;
+        justify-self: flex-start;
+    }
+
+}
+@media all and (max-width: 1024px) {
+    .buttonNewsDetail{
+        left: 10%;
+        bottom:20%;
+    }
+    
+}
+@media all and (max-width: 768px) {
+    .buttonNewsDetail{
+        left: 10%;
+    }
+    .buttonMissionsA{
+        display: none;
+    }
+    .buttonWrapperMissionsB{
+        right:30%;
+        bottom: -5%;
+        justify-content: center;
+    }
+    .buttonFormHome{
+        font-size: small;
+        width:150px;
+    }
+}
+@media all and (max-width: 480px) {
+    .button.buttonFooter2{
+        width: 275px;
+        height: 66px;
+    }
+    .buttonHistory{
+        width: 275px;
+        height: 48.5px;
+        font-size: 16px;
+    }
+    .buttonM3DS{
+        width: 275px;
+        height: 48.5px;
+    }
+    .buttonNewsDetail{
+        width: 150px;
+        height: 30px;
+        bottom: 6%;
+        left:10%;
+        font-size: 14px;
+    }
+    .buttonMissionsB{
+        width: 150px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .worksSection .buttonHistory{
+        font-size: 18px;
+    }
+
+    .buttonWrapperCarousel3D{
+        justify-content: center;
+    }
+    .buttonWrapperCarousel3D .buttonCarousel3D{
+        margin: 10px 0;
+    }
+}
+@media all and (max-width:300px){
+    .buttonM3DS{
+        width: 195px;
+        height: 48.5px;
+    }
+    .buttonWrapper{
+        width: 100%;
+        justify-content: center;
+    }
+    .buttonWrapperMissionsB{
+        width: 150px;
+        bottom: -10%;
+        right: 26%;
+    }
+} 

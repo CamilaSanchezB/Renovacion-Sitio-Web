@@ -1,0 +1,77 @@
+.backgroundConnectivity{
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.connectivityParagraph{
+  font-size: 24px;
+  text-align: center;
+  margin: 1%;
+  max-width: 70%;
+}
+.containerConnectivity{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 90%;
+  margin: 0% 5%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.Works{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.worksWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.worksWrapper img{
+  width: 60%;
+}
+@media screen and (max-width: 1366px) {  
+  .connectivityParagraph{
+    font-size: 22px;
+  }
+  .containerConnectivity{
+    max-width: 100%;
+    padding: 0;
+  }
+  .Carousel3DArrow {
+    margin-top: 0;
+    z-index: 5;
+  }
+  .titleWorks{
+    display: block;
+  }
+  .backgroundConnectivity {
+    background-size: 1366px auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .connectivityParagraph{
+    font-size: 20px;
+    margin: 0% 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .connectivityParagraph{
+    font-size: 18px;
+    margin: 0% 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .connectivityParagraph{
+    font-size: 16px;
+    margin: 5% 5%;
+    max-width: 90%;
+  }
+  .containerConnectivity{
+  padding-top: 0px;
+  }
+}
